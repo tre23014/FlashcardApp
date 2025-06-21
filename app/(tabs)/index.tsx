@@ -1,23 +1,18 @@
-import { useState } from "react";
-import { Button, StyleSheet, Text, View } from "react-native";
+import { Link } from 'expo-router';
+import { Button, StyleSheet, Text, View } from 'react-native';
 
-export default function FlashcardScreen() {
-  const [showAnswer, setShowAnswer] = useState(false);
-
-  const flashcard = {
-    question: "What is the capital of France?",
-    answer: "Paris",
-  };
-
+export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>
-        {showAnswer ? flashcard.answer : flashcard.question}
-      </Text>
-      <Button
-        title={showAnswer ? "Show Question" : "Show Answer"}
-        onPress={() => setShowAnswer(!showAnswer)}
-      />
+      <Text style={styles.title}>Flashcard App</Text>
+
+      <Link href="/createFlashcard" asChild>
+        <Button title="➕ Create Flashcards" />
+      </Link>
+
+      <Link href="/playGame" asChild>
+        <Button title="🎮 Start Flashcard Game" />
+      </Link>
     </View>
   );
 }
@@ -25,13 +20,12 @@ export default function FlashcardScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    justifyContent: "center",
-    alignItems: "center",
     padding: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-  text: {
-    fontSize: 24,
-    marginBottom: 20,
+  title: {
+    fontSize: 32,
+    marginBottom: 30,
   },
 });
