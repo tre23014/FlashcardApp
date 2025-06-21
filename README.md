@@ -1,50 +1,38 @@
-# Welcome to your Expo app 👋
+# Overview
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This Flashcard App was created to help me grow as a software engineer by learning how to build interactive mobile applications using React Native and Expo Router. My goal was to understand how to manage user input, share state across components, and handle navigation in a multi-screen app.
 
-## Get started
+The app allows users to create their own flashcard sets by entering questions and answers. Users can then study these flashcards by flipping them one at a time to view the answer, and cycle through their set in order. I tried to build a separate screen that also allows users to manage their flashcards—editing or deleting them if needed however it isn't fully working.
 
-1. Install dependencies
+This project helped me gain experience with core app-building concepts such as forms, dynamic navigation, shared context, and component-based design.
 
-   ```bash
-   npm install
-   ```
+[Software Demo Video](https://share.icloud.com/photos/001VgEbA0B-vryb1ELwetW5-w)
 
-2. Start the app
+# Development Environment
 
-   ```bash
-   npx expo start
-   ```
+- Visual Studio Code
+- Expo Go (for mobile testing)
+- Git & GitHub for version control
 
-In the output, you'll find options to open the app in a
+# Technologies Used
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- React Native with Expo
+- Expo Router for navigation
+- TypeScript
+- Context API for shared flashcard data
+- React Native components (e.g., View, Text, TextInput, Button)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+# Useful Websites
 
-## Get a fresh project
+* [Expo Documentation](https://docs.expo.dev/)
+* [React Native Docs](https://reactnative.dev/)
+* [React Context Guide](https://reactjs.org/docs/context.html)
+* [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 
-When you're ready, run:
+# Future Work
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+* Finish the editing and deleting
+* Add persistent local storage so flashcards remain after closing the app
+* Implement progress tracking for completed flashcards
+* Add categories or tags for organizing flashcards
+* Improve styling and animations for a smoother user experience
